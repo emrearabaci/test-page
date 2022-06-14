@@ -1,0 +1,63 @@
+@import './typography.scss';
+@import './colors.scss';
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.appHeaderText {
+  color: $appTextColor;
+  font-size: $appHeaderTextSize;
+  font-weight: $appHeaderTextWeight;
+}
+
+.appSubHeaderText {
+  color: $appTextColor;
+  font-size: $appSubHeaderTextSize;
+  font-weight: $appSubHeaderTextWeight;
+}
+
+.appHelperText {
+  font-size: $appHelperTextSize;
+  color: $appTextColor;
+}
+
+button {
+  color: $appTextColor !important;
+}
+
+a {
+  button {
+    &:hover {
+      color: $appLinkColor !important;
+    }
+  }
+
+  transition: transform 100ms ease;
+  &:hover {
+    transform: translate(10px, 0px);
+  }
+
+  &.router-link-exact-active {
+    color: $appLinkColor;
+    transform: translate(10px, 0px);
+  }
+}
+
+i {
+  .bi {
+    color: $appTextColor;
+
+    &:hover {
+      color: $appLinkColor !important;
+    }
+  }
+}
+
+.modal-sm {
+  margin: auto;
+  max-width: 320px;
+  width: 320px;
+  max-height: 450px;
+  height: 450px;
+}
